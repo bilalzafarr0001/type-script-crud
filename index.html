@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> 
+
+ <script src="./js/crudops.js" defer="defer"  ></script>
+  
+ 
+ </head>
+<body>
+
+   <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">TODO APP </a>
+        </li>   
+      </ul>
+    </nav>
+    
+      <div class="container mt-3">
+        <div class="row m-2">
+          <div class="form-group">
+            <span id="error"  style="color:red; font-style: italic"></span>
+            <input type="text" id="new-task" class="form-control"  placeholder="Please Enter Item"><br>
+          
+            <button class="btn btn-success" type="button">Add</button>
+        </div> 
+        <div class="form-group ml-2">
+          <input type="text" id="search-task" class="form-control"  placeholder="Please Enter Item to Search"><br>
+          <!-- <button class="btn btn-secondary" id="search-btn" type="button">Search</button> -->
+          <!-- <button class="btn btn-danger" id="sort-list" type="button">Sort List</button> -->
+       
+        </div>
+        </div>
+      
+      
+        <h3>todo List</h3>
+
+        <table class="table table-dark" id="showTable">
+          <thead>
+            <tr id="trside">   
+              <th id="tside" scope="col" >Item Name
+                 <img onclick="sortingD()" src="./arrow-down.svg"/> 
+                 <img onclick="sortingA()" src="./arrow-up.svg"/> 
+              </th>
+            
+              <th scope="col">Actions</th>
+            </tr>
+          </thead>
+          <tbody id="incomplete-tasks">
+            
+          </tbody>
+          </table>
+          <h1 id="not_found" > </h1>
+           
+        <!-- <table class="table table-striped">
+             <thead>
+            <tr>   
+              <th scope="col">Item Name</th>
+              <th scope="col">Actions</th>
+            </tr>
+          </thead>
+            <tbody  id="completed-tasks">
+               
+              
+            </tbody>
+            </table>   -->
+  
+ </body>
+</html>
+
+
+ 
